@@ -16,3 +16,4 @@ git reset --hard 版本号
 git reflog
 git checkout -- file.txt  丢掉工作区的修改
 git rm file.txt -----> git commit
+git push origin master 推送到远程库
