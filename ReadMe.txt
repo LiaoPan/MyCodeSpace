@@ -32,3 +32,5 @@ Creating a new branch is  quick and simple.
 git stash 保留工作现场---保留
 git stash list
 git stash pop 恢复并且删除stash == git stash apply stash@[0](选择要恢复stash) + git stash drop
+git branch -a 可以查看到远程分支
+git push origin --delete <branchName>  or  git push origin :<branchName>  删除远程分支
