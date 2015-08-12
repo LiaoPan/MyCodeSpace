@@ -2,7 +2,7 @@ Git is a distributed version control system.
 Git is a free software distributed under the GPL.
 Git performs well.
 Git has a mutable index called stage.
-cool!
+cool~
 Git tracks changes of files.
 ===================Git Command==============================
 git init
@@ -24,3 +24,4 @@ git checkout <name> 切换分支
 git checkout -b <name> 创建切换分支
 git merge <name> 合并某分支到当前分支
 git branch -d <name> 删除分支
+--------------------------------------------------------------
