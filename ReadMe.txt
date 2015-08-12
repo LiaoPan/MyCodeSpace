@@ -17,3 +17,10 @@ git reflog
 git checkout -- file.txt  丢掉工作区的修改
 git rm file.txt -----> git commit
 git push origin master 推送到远程库
+-------------分支--------------------------------------------
+git branch 查看分支
+git branch <name> 创建分支
+git checkout <name> 切换分支
+git checkout -b <name> 创建切换分支
+git merge <name> 合并某分支到当前分支
+git branch -d <name> 删除分支
