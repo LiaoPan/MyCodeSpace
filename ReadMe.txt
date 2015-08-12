@@ -28,3 +28,6 @@ git branch -d <name> 删除分支
 
 Creating a new branch is  quick and simple.
 --------------------------------------------------------------
+git stash 保留工作现场---保留
+git stash list
+git stash pop 恢复并且删除stash == git stash apply stash@[0](选择要恢复stash) + git stash drop
