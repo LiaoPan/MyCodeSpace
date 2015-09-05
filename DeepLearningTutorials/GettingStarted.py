@@ -9,7 +9,8 @@
 #============End=========================#
 
 import cPickle,numpy,gzip
-from Theano import theano
+from theano import *
+import theano.tensor as T 
 
 #Load the dataset
 f = gzip.open('mnist.pkl.gz','rb')
@@ -39,5 +40,5 @@ batch_size = 500 #size of minibatch
 data = train_set_x[2*500:3*500]
 label = train_set_y[2*500:3*500]
 
-print 'daata:',data
-print 'label',label
+# print 'daata:',data
+# print 'label',label

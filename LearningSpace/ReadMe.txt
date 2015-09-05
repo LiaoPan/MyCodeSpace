@@ -1,4 +1,4 @@
-#Learning Space#:
+Learning Space:
 
 Intro：
 使用知识空间和学习空间的知识，构造在线教育领域算法。
