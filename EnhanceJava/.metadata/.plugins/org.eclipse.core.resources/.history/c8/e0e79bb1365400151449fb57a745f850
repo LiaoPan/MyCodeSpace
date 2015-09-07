@@ -1,0 +1,13 @@
+package ex001;
+
+public class arraySort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//create a array with randomly order.
+		
+		//bubble sort
+		
+	}
+
+}
