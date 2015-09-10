@@ -1,0 +1,35 @@
+#author:L.P
+#time:201509102138
+
+Problem Statement
+
+Given a table STATION that holds data for five fields namely ID, CITY, STATE, NORTHERN LATITUDE and WESTERN LONGITUDE.
++-------------+------------+
+| Field       |   Type     |
++-------------+------------+
+| ID          | INTEGER    |
+| CITY        | VARCHAR(21)|
+| STATE       | VARCHAR(2) |
+| LAT_N       | NUMERIC    |
+| LONG_W      | NUMERIC    |
++-------------+------------+
+ 
+Write a query to print the list of CITY in lexicographical order for even ID only. Do not print duplicates.
+
+'''
+SQL SELECT DISTINCT 语句
+在表中，可能会包含重复值。这并不成问题，不过，有时您也许希望仅仅列出不同（distinct）的值。
+关键词 DISTINCT 用于返回唯一不同的值。
+语法：
+SELECT DISTINCT 列名称 FROM 表名称
+使用 DISTINCT 关键词
+如果要从 "Company" 列中选取所有的值，我们需要使用 SELECT 语句：
+SELECT Company FROM Orders
+'''
+
+answer:
+/*
+Enter your query here.
+Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
+*/
+select distinct city from station where id%2=0 order by city;
