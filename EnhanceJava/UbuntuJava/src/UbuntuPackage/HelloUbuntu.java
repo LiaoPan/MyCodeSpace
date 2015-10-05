@@ -11,6 +11,7 @@ public class HelloUbuntu {
 		for(int i = 1;i <= 10; i++){
 			System.out.println("This is the first day for programing in ubuntu with java");
 			System.out.println("I like it very much!!");
+			System.out.println("ok--配色完成");
 		}
 	}
 

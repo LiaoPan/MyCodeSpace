@@ -1,0 +1,319 @@
+actionpack (4.1.8)
+    Author: David Heinemeier Hansson
+    Homepage: http://www.rubyonrails.org
+    License: MIT
+    Installed at: /usr/share/rubygems-integration/all
+
+    Web-flow and rendering framework putting the VC in MVC (part of
+    Rails).
+
+actionview (4.1.8)
+    Author: David Heinemeier Hansson
+    Homepage: http://www.rubyonrails.org
+    License: MIT
+    Installed at: /usr/share/rubygems-integration/all
+
+    Rendering framework putting the V in MVC (part of Rails).
+
+activesupport (4.1.8)
+    Author: David Heinemeier Hansson
+    Homepage: http://www.rubyonrails.org
+    License: MIT
+    Installed at: /usr/share/rubygems-integration/all
+
+    A toolkit of support libraries and Ruby core extensions extracted
+    from the Rails framework.
+
+atomic (1.1.16)
+    Authors: Charles Oliver Nutter, MenTaLguY, Sokolov Yura
+    Homepage: http://github.com/headius/ruby-atomic
+    License: Apache-2.0
+    Installed at: /usr/share/rubygems-integration/2.1
+
+    An atomic reference implementation for JRuby, Rubinius, and MRI
+
+bigdecimal (1.2.4)
+    Authors: Kenta Murata, Zachary Scott, Shigeo Kobayashi
+    Homepage: http://www.ruby-lang.org
+    Installed at (default): /usr/lib/ruby/gems/2.1.0
+
+    Arbitrary-precision decimal floating-point number library.
+
+blankslate (2.1.2.4)
+    Authors: Jim Weirich, David Masover, Jack Danger Canty
+    Homepage: http://github.com/masover/blankslate
+    Installed at: /usr/share/rubygems-integration/all
+
+    BlankSlate extracted from Builder.
+
+builder (3.2.2)
+    Author: Jim Weirich
+    Homepage: http://onestepback.org
+    License: MIT
+    Installed at: /usr/share/rubygems-integration/all
+
+    Builders for MarkUp.
+
+cgi_multipart_eof_fix (2.5.0)
+    Author: Evan Weaver
+    Homepage:
+    http://blog.evanweaver.com/pages/code#cgi_multipart_eof_fix
+    Installed at: /var/lib/gems/2.1.0
+
+    Fix an exploitable bug in CGI multipart parsing.
+
+cucumber (2.1.0)
+    Authors: Aslak Hellesøy, Matt Wynne, Steve Tooke
+    Homepage: http://cukes.info
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    cucumber-2.1.0
+
+cucumber-core (1.3.0)
+    Authors: Aslak Hellesøy, Matt Wynne, Steve Tooke, Oleg Sukhodolsky,
+    Tom Brand
+    Homepage: http://cukes.info
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    cucumber-core-1.3.0
+
+diff-lcs (1.2.5)
+    Author: Austin Ziegler
+    Homepage: http://diff-lcs.rubyforge.org/
+    Licenses: MIT, Perl Artistic v2, GNU GPL v2
+    Installed at: /var/lib/gems/2.1.0
+
+    Diff::LCS computes the difference between two Enumerable sequences
+    using the McIlroy-Hunt longest common subsequence (LCS) algorithm
+
+erubis (2.7.0)
+    Author: makoto kuwata
+    Homepage: http://www.kuwata-lab.com/erubis/
+    Installed at: /usr/share/rubygems-integration/all
+
+    a fast and extensible eRuby implementation which supports
+    multi-language
+
+fastthread (1.0.7)
+    Author: MenTaLguY <mental@rydia.net>
+    Installed at: /var/lib/gems/2.1.0
+
+    Optimized replacement for thread.rb primitives
+
+gem_plugin (0.2.3)
+    Author: Zed A. Shaw
+    Installed at: /var/lib/gems/2.1.0
+
+    A plugin system based on rubygems that uses dependencies only
+
+gherkin3 (3.1.1)
+    Authors: Gáspár Nagy, Aslak Hellesøy, Steve Tooke
+    Homepage: https://github.com/cucumber/gherkin3
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    gherkin-3.1.1
+
+i18n (0.6.11)
+    Authors: Sven Fuchs, Joshua Harvey, Matt Aimonetti, Stephan Soller,
+    Saimon Moore
+    Homepage: http://github.com/svenfuchs/i18n
+    License: MIT
+    Installed at: /usr/share/rubygems-integration/all
+
+    New wave Internationalization support for Ruby
+
+io-console (0.4.2)
+    Author: Nobu Nakada
+    Homepage: http://www.ruby-lang.org
+    Installed at (default): /usr/lib/ruby/gems/2.1.0
+
+    Console interface
+
+json (1.8.1)
+    Author: 
+    Installed at (default): /usr/lib/ruby/gems/2.1.0
+
+    This json is bundled with Ruby
+
+mime-types (1.25.1)
+    Author: Austin Ziegler
+    Homepage: http://mime-types.rubyforge.org/
+    Licenses: MIT, Artistic 2.0, GPL-2
+    Installed at: /var/lib/gems/2.1.0
+
+    This library allows for the identification of a file's likely MIME
+    content type
+
+minitest (5.4.2, 4.7.5)
+    Author: Ryan Davis
+    Homepage: https://github.com/seattlerb/minitest
+    License: MIT
+    Installed at (5.4.2): /usr/share/rubygems-integration/all
+                 (4.7.5, default): /usr/lib/ruby/gems/2.1.0
+
+    minitest provides a complete suite of testing facilities supporting
+    TDD, BDD, mocking, and benchmarking
+
+multi_json (1.11.2)
+    Authors: Michael Bleigh, Josh Kalderimis, Erik Michaels-Ober, Pavel
+    Pravosud
+    Homepage: http://github.com/intridea/multi_json
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    A common interface to multiple JSON libraries.
+
+multi_test (0.1.2)
+    Authors: Matt Wynne, Steve Tooke
+    Homepage: http://cukes.info
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    multi-test-0.1.2
+
+net-ssh (3.0.1)
+    Authors: Jamis Buck, Delano Mandelbaum, Miklós Fazekas
+    Homepage: https://github.com/net-ssh/net-ssh
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    Net::SSH: a pure-Ruby implementation of the SSH2 client protocol.
+
+net-ssh-gateway (1.2.0)
+    Authors: Jamis Buck, Delano Mandelbaum
+    Homepage: https://github.com/net-ssh/net-scp
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    A simple library to assist in establishing tunneled Net::SSH
+    connections
+
+psych (2.0.5)
+    Author: Aaron Patterson
+    Homepage: http://github.com/tenderlove/psych
+    Installed at (default): /usr/lib/ruby/gems/2.1.0
+
+    Psych is a YAML parser and emitter
+
+rack (1.5.2)
+    Author: Christian Neukirchen
+    Homepage: http://rack.github.com/
+    License: MIT
+    Installed at: /usr/share/rubygems-integration/all
+
+    a modular Ruby webserver interface
+
+rack-test (0.6.2)
+    Author: Bryan Helmkamp
+    Homepage: http://github.com/brynary/rack-test
+    Installed at: /usr/share/rubygems-integration/all
+
+    Simple testing API built on Rack
+
+railties (4.1.8)
+    Author: David Heinemeier Hansson
+    Homepage: http://www.rubyonrails.org
+    License: MIT
+    Installed at: /usr/share/rubygems-integration/all
+
+    Tools for creating, working with, and running Rails applications.
+
+rake (10.3.2, 10.1.0)
+    Authors: Eric Hodel, Jim Weirich
+    Homepage: https://github.com/jimweirich/rake
+    License: MIT
+    Installed at (10.3.2): /usr/share/rubygems-integration/all
+                 (10.1.0, default): /usr/lib/ruby/gems/2.1.0
+
+    Rake is a Make-like program implemented in Ruby
+
+rdoc (4.1.0)
+    Author: 
+    Installed at (default): /usr/lib/ruby/gems/2.1.0
+
+    This rdoc is bundled with Ruby
+
+rspec (3.3.0)
+    Authors: Steven Baker, David Chelimsky, Myron Marston
+    Homepage: http://github.com/rspec
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    rspec-3.3.0
+
+rspec-core (3.3.2)
+    Authors: Steven Baker, David Chelimsky, Chad Humphries, Myron
+    Marston
+    Homepage: http://github.com/rspec/rspec-core
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    rspec-core-3.3.2
+
+rspec-expectations (3.3.1)
+    Authors: Steven Baker, David Chelimsky, Myron Marston
+    Homepage: http://github.com/rspec/rspec-expectations
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    rspec-expectations-3.3.1
+
+rspec-mocks (3.3.2)
+    Authors: Steven Baker, David Chelimsky, Myron Marston
+    Homepage: http://github.com/rspec/rspec-mocks
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    rspec-mocks-3.3.2
+
+rspec-support (3.3.0)
+    Authors: David Chelimsky, Myron Marson, Jon Rowe, Sam Phippen,
+    Xaviery Shay, Bradley Schaefer
+    Homepage: https://github.com/rspec/rspec-support
+    License: MIT
+    Installed at: /var/lib/gems/2.1.0
+
+    rspec-support-3.3.0
+
+rubyzip (1.1.7)
+    Author: Alexander Simonov
+    Homepage: http://github.com/rubyzip/rubyzip
+    License: BSD 2-Clause
+    Installed at: /var/lib/gems/2.1.0
+
+    rubyzip is a ruby module for reading and writing zip files
+
+test-unit (2.1.2.0)
+    Author: 
+    Homepage: http://www.ruby-lang.org
+    Installed at (default): /usr/lib/ruby/gems/2.1.0
+
+    test/unit compatible API testing framework
+
+thor (0.19.1)
+    Authors: Yehuda Katz, José Valim
+    Homepage: http://whatisthor.com/
+    License: MIT
+    Installed at: /usr/share/rubygems-integration/all
+
+    Thor is a toolkit for building powerful command-line interfaces.
+
+thread_safe (0.3.3)
+    Authors: Charles Oliver Nutter, thedarkone
+    Homepage: https://github.com/headius/thread_safe
+    License: Apache-2.0
+    Installed at: /usr/share/rubygems-integration/all
+
+    A collection of data structures and utilities to make thread-safe
+    programming in Ruby easier
+
+tzinfo (1.1.0)
+    Author: Philip Ross
+    Homepage: http://tzinfo.github.io
+    License: MIT
+    Installed at: /usr/share/rubygems-integration/all
+
+    Daylight savings aware timezone library

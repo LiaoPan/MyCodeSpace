@@ -16,4 +16,14 @@ BEGIN{
 
 END{
     puts "run after the program run!"}   
+#======注释========#
+
+=begin
+这是注释
+这是注释
+这是注释
+=end
+
+
+
 

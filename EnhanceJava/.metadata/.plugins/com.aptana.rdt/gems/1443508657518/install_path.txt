@@ -1,0 +1,1 @@
+["/home/reallocing/.gem/ruby/2.1.0", "/var/lib/gems/2.1.0", "/usr/share/rubygems-integration/2.1.0", "/usr/share/rubygems-integration/2.1", "/usr/share/rubygems-integration/all"]

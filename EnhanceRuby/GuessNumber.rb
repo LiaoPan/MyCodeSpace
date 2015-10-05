@@ -24,4 +24,7 @@ while true
     playerNumber = gets()
 end
 
+puts ""
+
     
+

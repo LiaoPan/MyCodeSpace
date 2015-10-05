@@ -11,3 +11,12 @@ if __name__ == "__main__":
     print "Hello World"
 
 print "Hello World"
+
+print "ok"
+print "ok"
+print "ok"
+
+for i in range(10):
+    print "ok1"
+    
+
