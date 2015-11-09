@@ -1,0 +1,21 @@
+package UbuntuPackage;
+
+public class TestCat {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.print("ok!");
+		Cat cat
+		
+	}
+
+}
+
+//No.1
+//开始写代码。需求：定义一个类Cat，继承父类Animal，并定义一个miao的方法，打印出“miao~”
+
+
+//end_code

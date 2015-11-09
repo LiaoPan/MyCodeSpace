@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;UbuntuJava/src/UbuntuPackage/arr_ex&apos; to &apos;arr_ex.java&apos;" description="Rename resource &apos;arr_ex&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/UbuntuPackage/arr_ex" name="arr_ex.java" stamp="1444573153608" updateReferences="true"/>
+</session>

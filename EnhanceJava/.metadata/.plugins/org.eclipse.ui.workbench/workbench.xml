@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
-<window height="734" width="904" x="424" y="117">
+<window height="727" width="831" x="829" y="121">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -10,52 +10,49 @@
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="144" y="30"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
-<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="88" y="30"/>
+<coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
 <coolItem id="org.radrails.rails.ui.RailsElementCreationActionSet" itemType="typeToolBarContribution" x="39" y="30"/>
-<coolItem id="org.radrails.rails.ui.railsActions" itemType="typeToolBarContribution" x="151" y="30"/>
+<coolItem id="org.radrails.rails.ui.railsActions" itemType="typeToolBarContribution" x="148" y="30"/>
+<coolItem id="org.rubypeople.rdt.ui.EditorRubyFile" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.rubypeople.rdt.ui.RubyElementCreationActionSet" itemType="typeToolBarContribution" x="68" y="30"/>
-<coolItem id="s.com.aptana.ide.core.ui.actionSet.ShowAptanaView" itemType="typeToolBarContribution" x="156" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.rubypeople.rdt.ui.EditorRubyFile" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="UserSeparator" itemType="typeSeparator"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="s.com.aptana.ide.core.ui.actionSet.ShowAptanaView" itemType="typeToolBarContribution" x="156" y="30"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1442317550196" focus="true" label="Workspace - RadRails">
+<page aggregateWorkingSetId="Aggregate for window 1442317550196" focus="true" label="Workspace - Java">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HelloUbuntu.java" partName="HelloUbuntu.java" path="/home/reallocing/Git/MyCodeSpace/EnhanceJava/UbuntuJava/src/UbuntuPackage/HelloUbuntu.java" title="HelloUbuntu.java" tooltip="UbuntuJava/src/UbuntuPackage/HelloUbuntu.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/UbuntuJava/src/UbuntuPackage/HelloUbuntu.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="119" selectionTopPixel="0"/>
-</editor>
-<editor id="org.rubypeople.rdt.ui.EditorRubyFile" name="try.rb" partName="try.rb" path="/home/reallocing/Git/MyCodeSpace/EnhanceJava/HelloRuby/try.rb" title="try.rb" tooltip="HelloRuby/try.rb" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HelloRuby/try.rb"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="33" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestSuper.java" partName="TestSuper.java" path="/home/reallocing/Git/MyCodeSpace/EnhanceJava/exJava/src/TestSuper.java" title="TestSuper.java" tooltip="exJava/src/TestSuper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/exJava/src/TestSuper.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="695" selectionTopPixel="290"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1441019458284">
-<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
@@ -96,9 +93,7 @@
 <view id="org.epic.regexp.views.RegExpView" partName="RegExp"/>
 <view id="org.rubypeople.rdt.ui.RubyExplorer" partName="Ruby Explorer">
 <viewState isWindowWorkingSet="false" layout="1" org.rubypeople.rdt.ui.packages.linktoeditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.rubypeople.rdt.ui.RubyExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.rubypeople.rdt.ui.RubyExplorer.ImportDeclarationFilter" isEnabled="true"/>
 <child filterId="org.rubypeople.rdt.ui.RubyExplorer.NonSharedProjectsFilter" isEnabled="false"/>
 <child filterId="org.rubypeople.rdt.ui.RubyExplorer.FieldsFilter" isEnabled="false"/>
 <child filterId="org.rubypeople.rdt.ui.RubyExplorer.StaticsFilter" isEnabled="false"/>
@@ -115,11 +110,20 @@
 </viewState>
 </view>
 <view id="org.rubypeople.rdt.testunit.views.TestUnitView" partName="Test::Unit"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
 <view id="org.radrails.rails.ui.ViewRailsPlugins" partName="Rails Plugins">
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="com.aptana.ide.debug.ui.scriptsView" partName="Loaded Scripts">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
 <view id="org.rubypeople.rdt.ui.TypeHierarchy" partName="Hierarchy"/>
@@ -138,8 +142,11 @@
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.radrails.rails.ui.PerspectiveRails">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -275,40 +282,53 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.5293186" ratioLeft="334" ratioRight="297" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<info folder="true" part="bottom" ratio="0.5293186" ratioLeft="334" ratioRight="297" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="right" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -451,6 +471,7 @@
 <alwaysOnActionSet id="org.radrails.rails.ui.railsActions"/>
 <alwaysOnActionSet id="org.rubypeople.rdt.ui.rubyActionSet"/>
 <alwaysOnActionSet id="org.radrails.rails.ui.RailsElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <show_view_action id="org.rubypeople.rdt.testunit.views.TestUnitView"/>
 <show_view_action id="org.rubypeople.rdt.ui.RubyExplorer"/>
 <show_view_action id="org.radrails.rails.ui.ViewRailsPlugins"/>
@@ -489,29 +510,22 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.radrails.rails.ui.ViewRailsPlugins"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder activePageID="org.rubypeople.rdt.ui.RubyExplorer" appearance="2" expanded="2">
-<page content="org.rubypeople.rdt.ui.RubyExplorer" label="Ruby Explorer"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.rubypeople.rdt.ui.RubyExplorer" appearance="2" expanded="2">&#x0A;<page content="org.rubypeople.rdt.ui.RubyExplorer" label="Ruby Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.74986464" ratioLeft="1385" ratioRight="462" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.74986464" ratioLeft="1385" ratioRight="462" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.19978343" ratioLeft="369" ratioRight="1478" relationship="2" relative="topLeft"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@2b30b627" ratio="0.74923235" ratioLeft="732" ratioRight="245" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info part="org.eclipse.ui.editorss" ratio="0.18827508" ratioLeft="167" ratioRight="720" relationship="2" relative="topLeft"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2b30b627" ratio="0.73693085" ratioLeft="437" ratioRight="156" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.radrails.rails.ui.ViewRailsPlugins" label="Rails Plugins"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.radrails.rails.ui.ViewGenerators" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
@@ -524,19 +538,139 @@
 <page content="com.aptana.gems.ui.ViewGems" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="com.aptana.rdt.ui.views.RailsAPIView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.5997953" ratioLeft="586" ratioRight="391" relationship="4" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="com.aptana.ide.documentation.TutorialView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="a.com.aptana.ide.core.ui.actionSet.ShowRadRails"/>
+<alwaysOnActionSet id="x.com.aptana.ide.core.ui.actionSet.ShowRadRails"/>
+<alwaysOnActionSet id="eclipsemonkeyAction.actionSet"/>
+<alwaysOnActionSet id="org.rubypeople.rdt.debug.ui.RDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="com.aptana.ide.debug.ui.JSDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.aptana.ide.debug.ui.scriptsView"/>
+<show_view_action id="com.aptana.ide.debug.ui.AJAXMonitorView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
+<show_view_action id="org.rubypeople.rdt.debug.ui.DisplayView"/>
+<perspective_action id="org.radrails.rails.ui.PerspectiveRails"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.rubypeople.rdt.ui.PerspectiveRuby"/>
+<perspective_action id="org.rubypeople.rdt.ui.RubyBrowsingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="com.aptana.ide.debug.ui.scriptsView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.rubypeople.rdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.rubypeople.rdt.ui.RubyExplorer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.74958634" ratioLeft="1359" ratioRight="454" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.749736" ratioLeft="710" ratioRight="237" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<page content="org.rubypeople.rdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.5997953" ratioLeft="586" ratioRight="391" relationship="4" relative="topLeft">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2520aa05" ratio="0.4492958" ratioLeft="319" ratioRight="391" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="com.aptana.ide.documentation.TutorialView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="com.aptana.ide.debug.ui.scriptsView" label="Loaded Scripts"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74958634" ratioLeft="1359" ratioRight="454" relationship="2" relative="org.eclipse.ui.internal.ViewStack@2520aa05">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.10683297" ratioLeft="197" ratioRight="1647" relationship="2" relative="org.eclipse.ui.internal.ViewStack@2520aa05"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7f4f1536" ratio="0.7496393" ratioLeft="1039" ratioRight="347" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 </presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.4997242" ratioLeft="906" ratioRight="907" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -546,87 +680,158 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ex001/src/ex001/ex001.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ex001/src/ex001/ex2_5.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/UbuntuJava/src/UbuntuPackage/HelloUbuntu.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.rubypeople.rdt.ui.EditorRubyFile" path="/HelloRuby/try.rb"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/HelloRuby/hello"/>
-<editor factoryID="com.aptana.radrails.MyRadRailsElementFactory" id="com.aptana.radrails.MyRadRailsEditor"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.rubypeople.rdt.ui.EditorRubyFile" path="/HelloRuby/try.rb"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/UbuntuJava/src/UbuntuPackage/HelloUbuntu.java"/>
 <editor factoryID="com.aptana.radrails.MyRadRailsElementFactory" id="com.aptana.radrails.MyRadRailsEditor"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.rubypeople.rdt.ui.EditorRubyFile" path="/HelloRuby/try.rb"/>
+<editor factoryID="com.aptana.radrails.MyRadRailsElementFactory" id="com.aptana.radrails.MyRadRailsEditor"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.rubypeople.rdt.ui.EditorRubyFile" path="/HelloRuby/try.rb"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/PracticeInJava/src/HelloUbuntu.java"/>
+<editor factoryID="com.aptana.radrails.MyRadRailsElementFactory" id="com.aptana.radrails.MyRadRailsEditor"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/UbuntuJava/src/UbuntuPackage/HelloUbuntu.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/UbuntuJava/src/UbuntuPackage/TestSuper.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/PracticeInJava/src/HelloUbuntu.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.rubypeople.rdt.ui.EditorRubyFile" path="/HelloRuby/try.rb"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/exJava/src/TestSuper.java"/>
 </editors>
-<item historyLabel="ex001.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ex001.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ex2_5.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ex2_5.java" index="1">
-<position info="not_deleted" x="327" y="0"/>
-</item>
-<item historyLabel="ex001.java" index="0">
-<position info="not_deleted" x="118" y="0"/>
-</item>
-<item historyLabel="HelloUbuntu.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="HelloUbuntu.java" index="2">
-<position info="not_deleted" x="187" y="0"/>
-</item>
-<item historyLabel="HelloUbuntu.java" index="2">
-<position info="not_deleted" x="353" y="0"/>
-</item>
-<item historyLabel="HelloUbuntu.java" index="2">
-<position info="not_deleted" x="349" y="0"/>
-</item>
-<item historyLabel="try.rb" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="hello" index="4">
-<position info="not_deleted" x="14" y="0"/>
-</item>
-<item historyLabel="My RadRails" index="5"/>
-<item historyLabel="hello" index="4">
-<position info="not_deleted" x="14" y="0"/>
-</item>
-<item historyLabel="try.rb" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="hello" index="4">
-<position info="not_deleted" x="0" y="18"/>
-</item>
-<item historyLabel="try.rb" index="6">
+<item historyLabel="My RadRails" index="1"/>
+<item historyLabel="try.rb" index="2">
 <position info="not_deleted" x="33" y="0"/>
 </item>
-<item historyLabel="My RadRails" index="5"/>
-<item historyLabel="try.rb" index="6">
+<item historyLabel="HelloUbuntu.java" index="0">
+<position info="not_deleted" x="56" y="0"/>
+</item>
+<item historyLabel="try.rb" index="2">
 <position info="not_deleted" x="33" y="0"/>
 </item>
-<item historyLabel="hello" index="4">
-<position info="not_deleted" x="0" y="18"/>
+<item historyLabel="HelloUbuntu.java" index="0">
+<position info="not_deleted" x="56" y="0"/>
 </item>
-<item historyLabel="HelloUbuntu.java" index="7">
-<position info="not_deleted" x="72" y="0"/>
+<item historyLabel="My RadRails" index="3"/>
+<item historyLabel="try.rb" index="4">
+<position info="not_deleted" x="5" y="0"/>
 </item>
-<item historyLabel="My RadRails" index="5"/>
-<item historyLabel="HelloUbuntu.java" index="7">
-<position info="not_deleted" x="72" y="0"/>
-</item>
-<item historyLabel="My RadRails" index="5"/>
-<item historyLabel="try.rb" index="6">
+<item historyLabel="HelloUbuntu.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="My RadRails" index="8"/>
+<item historyLabel="HelloUbuntu.java" index="5">
+<position info="not_deleted" x="271" y="0"/>
+</item>
+<item historyLabel="HelloUbuntu.java" index="5">
+<position info="not_deleted" x="270" y="0"/>
+</item>
+<item historyLabel="HelloUbuntu.java" index="5">
+<position info="not_deleted" x="227" y="0"/>
+</item>
+<item historyLabel="HelloUbuntu.java" index="5">
+<position info="not_deleted" x="102" y="0"/>
+</item>
+<item historyLabel="HelloUbuntu.java" index="0">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item historyLabel="My RadRails" index="6"/>
+<item historyLabel="HelloUbuntu.java" index="7">
+<position info="not_deleted" x="392" y="0"/>
+</item>
+<item historyLabel="My RadRails" index="6"/>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="1237" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="340" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="387" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="428" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="474" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="401" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="1073" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="623" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="1133" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="1230" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="987" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="1003" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="752" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="265" y="6"/>
+</item>
 <item historyLabel="HelloUbuntu.java" index="9">
-<position info="not_deleted" x="72" y="0"/>
+<position info="not_deleted" x="102" y="0"/>
 </item>
-<item active="true" historyLabel="HelloUbuntu.java" index="9">
-<position info="not_deleted" x="381" y="0"/>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="265" y="6"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="37" y="9"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="96" y="4"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="37" y="9"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="839" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="8">
+<position info="not_deleted" x="342" y="0"/>
+</item>
+<item historyLabel="HelloUbuntu.java" index="9">
+<position info="not_deleted" x="102" y="0"/>
+</item>
+<item historyLabel="HelloUbuntu.java" index="7">
+<position info="not_deleted" x="394" y="0"/>
+</item>
+<item historyLabel="My RadRails" index="6"/>
+<item historyLabel="try.rb" index="10">
+<position info="not_deleted" x="5" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="11">
+<position info="not_deleted" x="626" y="0"/>
+</item>
+<item historyLabel="TestSuper.java" index="11">
+<position info="not_deleted" x="492" y="7"/>
+</item>
+<item historyLabel="TestSuper.java" index="11">
+<position info="not_deleted" x="654" y="0"/>
+</item>
+<item active="true" historyLabel="TestSuper.java" index="11">
+<position info="not_deleted" x="666" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -646,6 +851,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestSuper.java" tooltip="exJava/src/TestSuper.java">
+<persistable path="/exJava/src/TestSuper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestSuper.java" tooltip="UbuntuJava/src/UbuntuPackage/TestSuper.java">
+<persistable path="/UbuntuJava/src/UbuntuPackage/TestSuper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HelloUbuntu.java" tooltip="PracticeInJava/src/HelloUbuntu.java">
+<persistable path="/PracticeInJava/src/HelloUbuntu.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.rubypeople.rdt.ui.EditorRubyFile" name="try.rb" tooltip="HelloRuby/try.rb">
 <persistable path="/HelloRuby/try.rb"/>
 </file>
