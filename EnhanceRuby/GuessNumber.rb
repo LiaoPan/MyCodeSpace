@@ -8,6 +8,7 @@
    that you can translate to an integer.)
 
 =end
+ require 'debase/ruby_core_source'
 puts "Guess a number between 0 and 9"
 randomNumer = rand(10)
 playerNumber = gets()
@@ -22,9 +23,11 @@ while true
     end
     puts "Please guess again!"
     playerNumber = gets()
+
+
 end
 
-puts ""
+puts "b "
 
     
 

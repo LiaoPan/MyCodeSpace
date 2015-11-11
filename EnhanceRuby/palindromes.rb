@@ -23,7 +23,7 @@ $programBeginTime = Time.now
 #$programBeginTime = DateTime.now
 #puts $programBeginTime
 #read word.txt and return arr
-$wordfile = IO.readlines("/home/reallocing/Git/MyCodeSpace/EnhanceRuby/words2.txt")
+$wordfile = IO.readlines("/home/reallocing/Git/MyCodeSpace/EnhanceRuby/words.txt")
 #puts $wordfile[0]
 
 

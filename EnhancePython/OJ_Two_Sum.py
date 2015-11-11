@@ -27,14 +27,14 @@ def twoSum1(nums,target):
 	for i in range(len(nums)):
 		if nums[i] in buff:
 			#print "return results:",([buff[nums[i]],i+1]) 
-			print [buff[nums[i]],i+1]    #Bug1:ÓÃreturnÖ»»á·µ»ØÒ»¶Ô£¬¶øÓÃprint¿ÉÒÔ·µ»ØËùÓĞÆ¥ÅäµÄ½á¹û
+			print [buff[nums[i]],i+1]    #Bug1:ï¿½ï¿½returnÖ»ï¿½á·µï¿½ï¿½Ò»ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½printï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¥ï¿½ï¿½Ä½ï¿½ï¿½
 			 
 		else:
 			buff[target-nums[i]] = i+1
 
 def twoSum2(nums, target):
     m = {}
-    for i,num in enumerate(nums):  #±éÀúË÷ÒıºÍÖµ
+    for i,num in enumerate(nums):  #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
         if target - num in m:
 			return [m[target - num],i + 1]
         m[num] = i + 1			

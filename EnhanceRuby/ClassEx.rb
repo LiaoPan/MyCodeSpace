@@ -68,3 +68,5 @@ h = Hello.new("Bob")
 p h.name
 p h.name=("Alice")  #modify @name (class var)
 p h.name
+
+puts "double display is ok!"

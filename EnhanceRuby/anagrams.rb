@@ -20,6 +20,7 @@ b. 集合间的单词以空格区分。
 def strSort(word)
 	wordlen = word.length
 	arr = []
+
 	for i in 0...wordlen
 		arr << word[i]
 	end
@@ -50,16 +51,16 @@ end
 
 $ct = Time.now()
 words = File.readlines("words.txt")
-# res = anagrams(words)
-# puts res.values
+res = anagrams(words)
+puts res.values
 
 #save as file
-File = File.new("results_anagrams.txt","r+")
-if File
-	File.syswrite(anagrams(words).values)
-else
-	puts "Unable to open file!"
-end
+# File = File.new("results_anagrams.txt","r+")
+# if File
+# 	File.syswrite(anagrams(words).values)
+# else
+# 	puts "Unable to open file!"
+# end
 
 $et = Time.now()
 

@@ -33,7 +33,7 @@ c.定冠词不计入其中。
 f = File.open("wordcount.txt",'r')
 res = countWords(f)
 #handle to definite article(定冠词)
-res.delete_if{|key,value| key == "the"||key == "this"||key=="a"||key=="an"}
+res.delete_if{|key,value| key == "the"}
 
 #print 
 

@@ -27,7 +27,8 @@ I <- matrix(c(1,0,1,0,1,1,
 
 
 #read mushroom data
-I <- read.table(file.choose(),sep = " ")
+#I <- read.table(file.choose(),sep = " ")
+I <- read.table("/home/reallocing/Git/MyCodeSpace/R_Algorithm/dna.txt",sep = " ")
 I <- as.matrix(I)
 
 #define function RelyYFindX() that find x-index by y-index;the index's position represent element 1;
@@ -137,14 +138,14 @@ while(sum(U)!=0){
   #------remove the elements by marked------#
   MM<- GenMbyxyindex(I,X_Index_Max,Y_Index_Max)
   U[1==MM]<-0
-  print(U)
+  #print(U)
 }
 
 
 
 #-------get the decomposition matrix C and D
-C
-D
+#C
+#D
 
 Rprof(NULL)
 summaryRprof()
@@ -190,28 +191,96 @@ Rprof()
 A <-  C
 O <-  D
 
+#排序函数（算法1的主要函数，参数不同，功能不同，^_^ ^_^）
+library(Rcpp)
+func <- 'NumericMatrix grecond(NumericMatrix U,NumericMatrix A4,NumericMatrix O4,NumericMatrix A,NumericMatrix O) {
+
+int Urown=U.nrow();
+
+int Ucoln=U.ncol();
+
+NumericMatrix T(Urown,Ucoln) ;
+while(sum(U)>0){
+int cov=0;
+int index=0;
+for(int i=0;i<O4.nrow();i++){
+NumericMatrix temp(Urown,Ucoln) ;
+for(int m=0; m<Urown;m++){
+for(int n=0;n<Ucoln;n++){
+if(A4(m,i)*O4(i,n)==1){
+temp(m,n)=1;
+}else{
+temp(m,n)=0;
+}
+}
+}
+NumericMatrix te(Urown,Ucoln);
+for(int i=0;i<Urown;i++){
+for(int j=0;j<Ucoln;j++){
+te(i,j)=U(i,j)*temp(i,j);
+}
+}
+int num=sum(te);
+if(cov<num){
+cov=num;
+index=i;
+T=te;
+}
+} 
+
+NumericMatrix t1(A.nrow(),A.ncol()+1) ;
+for (int j = 0;j < A.ncol()+1;j++) {
+if(j<A.ncol()) {
+t1(_,j) = A(_,j);
+} else {
+//put the context in the second matrix to the new matrix
+t1(_,j) = A4(_,index);
+}
+}
+A=t1;
+NumericMatrix t2(O.nrow()+1,O.ncol()) ;
+for (int j = 0;j < O.nrow()+1;j++) {
+if(j<O.nrow()) {
+t2(j,_) = O(j,_);
+} else {
+//put the context in the second matrix to the new matrix
+t2(j,_) = O4(index,_);
+}
+}
+O=t2;
+for(int i=0;i<Urown;i++){
+for(int j=0;j<Ucoln;j++){
+if(U(i,j)*T(i,j)==1){
+U(i,j)=0;
+}
+}
+}
+}
+NumericMatrix t3(A.ncol(),A.nrow()) ;
+for(int i=0;i<t3.nrow();i++){
+for(int j=0;j<t3.ncol();j++){
+t3(i,j)=A(j,i);
+}
+}
+NumericMatrix t4(t3.nrow(),t3.ncol()+O.ncol()) ;
+for (int j = 0;j < t3.ncol()+O.ncol();j++) {
+if(j<t3.ncol()) {
+t4(_,j) = t3(_,j);
+} else {
+t4(_,j) = O(_,j-t3.ncol());
+}
+}
+return t4;
+}'
+cppFunction(func)
 
 X=matrix(0,nrow=nrow(A),ncol=0)
 Y=matrix(0,nrow=0,ncol=ncol(O))
-judge=matrix(1,nrow(O),1);
-U=I;
-for(i in 1:(nrow(O))){
-  cover=0;
-  index=0;
-  for(j in 1:nrow(O)){
-    Newcover <- sum(U*bool_prod(matrix(A[,j]),t(matrix(O[j,]))))
-    if(cover < Newcover){
-      cover <- Newcover;
-      index <- j;
-    }
-  }
-  judge[index,1]=0;
-  X=cbind(X,A[,index]);
-  Y=rbind(Y,O[index,]);
-  A[,index]=0;
-  O[index,]=0;
-  U=I-bool_prod(X,Y);
-}
+U=I;#I 是原数据矩阵，dna数据
+t=grecond(U,A,O,X,Y);#A和O表示分解的结果，X 和 Y 表示排序以后的结果。  #BUG:modify the value of Matrix I and Matrix U.
+#t是返回一个矩阵，通过t可以得到X和Y。
+X=t(t[,1:nrow(I)]);
+Y=t[,(nrow(I)+1):ncol(t)];
 
 Rprof(NULL)
 summaryRprof()  # the function above is too slowly costed 12 hour. So Need to use C++ speed up.
@@ -223,14 +292,47 @@ Rprof()
 #############################################################################
 #对生成的X和Y的各列的覆盖进行统计百分比
 #############################################################################
-total=sum(I);
-for(i in 1:nrow(Y)){
-  if(i==1){
-    print(sum(bool_prod(matrix(X[,1:i]),t(matrix(Y[1:i,]))))/total);
-  }else{
-    print(sum(bool_prod(X[,1:i],Y[1:i,]))/total);
-  }
+func1 <- 'NumericMatrix prt(NumericMatrix X,NumericMatrix Y,NumericMatrix I) {
+  double total=sum(I);
+int cov=0;
+NumericMatrix U=I;
+NumericMatrix out(Y.nrow(),1) ;
+for(int i=0;i<Y.nrow();i++){
+NumericMatrix temp(I.nrow(),I.ncol()) ;
+for(int m=0; m<I.nrow();m++){
+for(int n=0;n<I.ncol();n++){
+if(X(m,i)*Y(i,n)==1){
+temp(m,n)=1;
+}else{
+temp(m,n)=0;
 }
+}
+}
+NumericMatrix te(I.nrow(),I.ncol()) ;
+for(int i=0;i<I.nrow();i++){
+for(int j=0;j<I.ncol();j++){
+te(i,j)=U(i,j)*temp(i,j);
+}
+}
+cov=cov+sum(te);
+out(i,0)=cov/total;
+for(int i=0;i<I.nrow();i++){
+for(int j=0;j<I.ncol();j++){
+if(U(i,j)*te(i,j)==1){
+U(i,j)=0;
+}
+}
+}
+}
+return out;
+}'
+
+cppFunction(func1)
+#运行之前，保证I就是原来的数据（我的算法中I的值在这个时候会有变化，我又重新读取了一遍，不知道为什么。）
+I <- read.table("/home/reallocing/Git/MyCodeSpace/R_Algorithm/dna.txt",sep = " ")
+I <- as.matrix(I)
+out=prt(X,Y,I)  #BUG:the cpp function will modified the value of matrix I.
+out
 
 Rprof(NULL)
 summaryRprof()
@@ -241,28 +343,3 @@ summaryRprof()
 
 
 
-#随即生成R0(m,n)矩阵
-#input：m,n,d（属于[0,1],R中1s的百分比,即density）
-#function:生成k密度的1的R0
-getR0<-function(rownum,colnum,k){
-  i<-0
-  K<-round(k*rownum*colnum)
-  M<-matrix(0,rownum,colnum)
-  R<-matrix(0,rownum,colnum)
-  #bug:取0.51是因为，这里有可能取0，那么就没有这个索引了
-
-  while(sum(M)!=K){
-    for(q in 1:rownum){ #每次遍历行 取1个元素翻转
-      a<-round(runif(1,0.51,colnum))
-       R[q,a] <- 1        
-      if(M[q,a] == 0){
-          R[q,a]<- 1
-          M[q,a]<- 1
-          i<-i+1
-          if(i==K){break}
-      }
-    }
-  }
-  
-  return(R)
-}
