@@ -1,0 +1,37 @@
+package exJava;
+//enjoy the Runnable
+//create task:
+//print 'a' 1000;
+//print 'b' 1000;
+//print 1~1000;
+
+
+public class TaskClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Multiply thread");
+	}
+
+}
+
+
+class PrintChar implements Runnable{
+	private char chartoprint;
+	private int times; //the number of print times;
+	/**
+	 * print the character n times;
+	 */
+	public PrintChar(char c,int n){
+		chartoprint = c;
+		times = n;
+	}
+	
+	public void run(){
+		for(int i = 0;i < times ; i++){
+			System.out.print(chartoprint);
+		}
+	}
+	
+	
+}

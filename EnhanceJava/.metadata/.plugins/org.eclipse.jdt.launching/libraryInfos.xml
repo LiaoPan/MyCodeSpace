@@ -19,6 +19,44 @@
 <entry path="/usr/local/java/jdk1.8.0_60/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+<libraryInfo home="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre" version="1.8.0_74">
+<bootpath>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/resources.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/rt.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/sunrsasign.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/jsse.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/jce.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/charsets.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/jfr.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/home/reallocing/ubuntu_usr/jdk1.8.0_74" version="1.8.0_74">
+<bootpath>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/resources.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/rt.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/sunrsasign.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/jsse.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/jce.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/charsets.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/jfr.jar"/>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/home/reallocing/ubuntu_usr/jdk1.8.0_74/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="C:\Program Files\Java\jre1.8.0_51" version="1.8.0_51">
 <bootpath>
 <entry path="C:\Program Files\Java\jre1.8.0_51\lib\resources.jar"/>

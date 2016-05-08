@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class ReviewJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Hello,World!");
+		
+		//review array
+		float[] aa = new float[]{1,2,3,4};
+		System.out.println(aa[1]);
+		double[] aaa = new double[10];
+		/*
+		for(int i = 0; i < 11;i++){
+			aaa[i] = i;
+		}
+		*/
+		System.out.println(aaa[1]);
+		
+		System.out.println("-----------------");
+		System.out.println("判断闰年");
+		/**
+		 * 判断闰年一般的规律为: 四年一闰,百年不闰,四百年再闰.
+		 * 其简单计算方法:1.能被4整除而不能被100整除.
+		 * （如2004年就是闰年,1800年不是.）
+		 * 2.能被400整除.（如2000年是闰年）
+		 */
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println(year);
+	}
+
+}

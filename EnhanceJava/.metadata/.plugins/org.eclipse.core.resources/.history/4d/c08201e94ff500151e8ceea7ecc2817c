@@ -1,0 +1,23 @@
+
+public class ReviewJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Hello,World!");
+		
+		//review array
+		float[] aa = new float[]{1,2,3,4};
+		System.out.println(aa[1]);
+		double[] aaa = new double[10];
+		
+		for(int i = 0; i < 11;i++){
+			aaa[i] = i;
+		}
+		
+		System.out.println(aaa[1]);
+		
+		
+	}
+
+}
