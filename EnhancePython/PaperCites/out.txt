@@ -1,0 +1,886 @@
+297 
+
+Fuzzy Student Model in InterMediActor Platform 
+
+Alenka Kavcic 
+
+Faculty of Computer and Information  Science,  University of Ljubljana, 
+
+Triaika 25, 1000 Ljubljana, Slovenia 
+
+Rafael Pedraza-JimCnez, Harold Molina-Bulla, Francisco J. Valverde Albacete, 
+
+Jesus Cd-Sueiro, Angel Navia-VBzquez 
+
+Department  of Signal Processing and Communications,  University Carlos III of Madrid, 
+
+Avda. de la Universidad 30, 28911 Leganis, Spain 
+
+E-mail: alenka.kavcic@ri.uni-lj.si,  {rpedraza, hmolina, f i a ,  jcid, navia)@tsc.uc3m.es 
+
+in 
+
+Abstract.  The paper deals with personalization 
+of  navigation 
+the  educational  content, 
+introduced in  a  competence-based instructional 
+design  system  InterMediActor.  The  system 
+~onstruct~ an  individualized  navigation  graph 
+for each student and thus suggests  the learning 
+objectives the student is most prepared to attain. 
+The  navigation  tools  rely  on  the  graph  of 
+dependencies  between  competences,  and  the 
+student  model.  We  use  fuzzy  set  theory  for 
+dealing  with  uncertainry  in  the  assessment of 
+students:  the  marks  of  assessment  tests  are 
+transformed  into  linguistic  terms,  which  are 
+assigned to linguistic variables. Fuzzy IF-THEN 
+rules  are  applied  to  obtain  the  appropriate 
+categories  of  competences  in  the  navigation 
+graph. 
+
+Keywords.  Educational 
+inference, personalized navigation, user model 
+
+systems, 
+
+fuzzy 
+
+1. Introduction 
+
+is 
+
+teaching 
+
+Personalization  of  instruction  in  educational 
+systems  can  significantly improve  the  teaching 
+process.  It has been shown that the best method 
+tutoring  [2]. 
+of 
+Individualized instruction considers the needs of 
+the students: the students can control the pace at 
+which they progress through  the course material 
+and  the  materials  they  use  are  suited  to  their 
+cognitive skills and leaming styles [2]. 
+
+individualized 
+
+educational 
+
+The  ability  to  adapt  the  instruction  to  the 
+needs  of  an  individual  user  is  important  in 
+systems.  Different 
+today’s 
+techniques  can  be  used 
+to  offer  system’s 
+adaptation,  navigation  support  being  one  of 
+them. Curriculum sequencing  or direct guidance 
+is one of the  oldest  techniques, widely  used  in 
+intelligent tutoring systems. This technique helps 
+
+each  student  to  find  an  individualized  optimal 
+path  through  the  leaming  material  [l].  The 
+personalization of navigation is done through the 
+student model,  which  collects  vital  information 
+on each individual student. 
+
+To assure personalized navigation through the 
+course content was also our main objective. We 
+set  up  a  navigation  assistance in  the  e-leaming 
+platform  InterMediActor  [SI, which  relies  on a 
+prediction  model  built  upon  the  information 
+gathered  from the  student’s previous  interaction 
+with the  system. The navigation graph, which  is 
+constructed  for  each 
+individual  student,  is 
+updated as the student proceeds with the course. 
+The paper is focused on fuzzy user modelling 
+in a competence-based instructional system. First 
+we present a computer-based distance education 
+platform  InterMediActor,  for  which  the  fuzzy 
+student  model  is  developed.  Then we  describe 
+the f u z q  inference mechanism, which is the core 
+of our model It  employs linguistic variables and 
+linguistic rules for  deducing  information  that  is 
+relevant to a particular student. 
+
+2. IntelMediActor  platform 
+
+[6,8]  is  an 
+
+InterMediActor 
+
+instructional 
+design  system,  which  provides  an  environment 
+for instructional  content design,  poduction, and 
+reuse,  as well as  student evaluation. It relies on 
+the  concept  of  a  competence,  which  is  the 
+educational  equivalent  of  a  grounded  leaming 
+objective aiming at some leaming outcome.  The 
+instructional model  in  InterMediActor  involves 
+the  decomposition of  leaming  objectives  into a 
+corresponding 
+hierarchical 
+for 
+competences.  The  proposed  method 
+developing educational content has two phases: 
+-  top-down analysis of leaming objectives, and 
+-  bottom-up synthesis of competences. 
+
+structure 
+
+of 
+
+26th Int. Conf. lnformafion Technology lnferfaces /TI 2004, June 7-10, 2004, Cavtat, Croatia 
+
+298 
+
+the 
+
+- 
+
+- 
+
+- 
+
+leaming 
+
+(states  what 
+
+-  advance  organizer  (introduces the  topic 
+- 
+
+to be leamed), 
+content  to be learned (can be a complex 
+multimedia object), 
+summary 
+outcome should be), 
+self assessment and findassessment tests 
+(based on the introduced content), 
+pre-requisites  of  he  competence  (which 
+have  to  be  grasped  before  trying  to 
+understand  this  particular  competence; 
+the  depends+n 
+determine 
+relationship 
+between  competences  of 
+the 
+same 
+granularity). 
+
+in 
+
+relationship 
+
+the  partuf 
+
+Once  the atomic competences are  identified, 
+more complex competences can be  synthesized 
+following 
+the 
+hierarchy  graph.  In  this  bottom-up  approach, 
+atomic  competences  are  aggregated  as  the 
+content of a higher-level competence, for which 
+the  advance  organizer, 
+summary  and 
+assessment  tests  are  further  provided.  Such 
+aggregated, second-order  competences can then 
+be  used  to  synthesize  new  ones,  until  each 
+leaning objective in the analysis coalesces into a 
+competence  and  the  resulting  content  has  the 
+shape of a competence graph. 
+
+the 
+
+3. Fuzzy logic and fuzzy inference 
+
+language.  Fuzzy 
+
+The  theory  of  fuzzy  logic  is  a  part  of  a 
+broader fuzzy set theory [9]. It was introduced in 
+the  1960’s as  a  means to  model the uncertainty 
+logic  extends 
+of  natural 
+conventional Boolean logic to handle the concept 
+of partial truth (truth values between “completely 
+true” and  “completely  false”).  The partial truth 
+takes a continuous range  of truth  values  and  is 
+determined by  the  membership  function, which 
+takes values from the closed interval [0,1]. 
+
+Fuzzy  inference  (approximate  reasoning) is 
+based  on  hzzy  logic  and  resembles  human 
+reasoning in its use  of approximate information 
+and uncertainty to generate decisions. It  consists 
+of one or more fuzzy rules (implications), a set of 
+facts, and a conclusion [4, 51. 
+
+The  fuzzy  production  rules,  which  connect 
+premises with conclusions, have the  form of IF- 
+THEN rules: 
+
+IFX,=A,  andX,=A>and ... andX,=A, 
+THEN Y = B, 
+where X, and  Y are linguistic variables, and  Ai 
+and B are linguistic terms. The IF part of the rule 
+
+(1) 
+
+Figure  1. Top-down analysis of learning 
+
+objectives 
+
+Topdown  analysis,  which  is  conceptually 
+depicted  in  Fig.  1, proceeds by partitioning and 
+refining over-arching, all-encompassing leaning 
+objectives into more detailed and concrete ones. 
+The  process  ends  when  atomic  objectives are 
+identified  The  result  of  this  analysis  is  a 
+heterogeneous  graph  of  dependences  between 
+learning  objectives  with 
+types  of 
+relationship:  part-of  relationship  between  one 
+objective and its sub-objectives, and depends-on 
+relationship  between objectives that are parts-of 
+the same (more general) objective. The former is 
+described  as  a  tree-like  hierarchy  (hierarchy 
+graph) and  the  latter as a  finite graph (graph of 
+dependencies). 
+
+two 
+
+,.... 
+
+. 
+
+,. 
+
+Figure 2. Transforming an atomic objective 
+
+into an atomic competence 
+
+After performing the top-down analysis, a set 
+of  atomic  competences  is  extracted  out  of the 
+leaming  objectives  (see  Fig.  2).  Each  atomic 
+atomic 
+objective 
+competence 
+information 
+consists of: 
+
+that  among  other 
+
+into  one 
+
+extended 
+
+is 
+
+299 
+
+is the premise, the THEN part  of the rule  is the 
+conclusion. 
+
+Fuzzy  inference  matches  fuzzy  facts against 
+fuzzy conditions and assigns a  fuzzy output  set. 
+In contrast to crisp rules, each rule is allowed to 
+fire in a fuzzy system. Consequently, the order in 
+which the rules execute is not important. 
+
+Fuzzy reasoning  involves the  following  four 
+
+processes [7]: 
+
+fuzzification, 
+aggregation, 
+composition, and 
+dehzzification. 
+
+- 
+-- 
+- 
+- 
+Crisp input values are fuzzified into linguistic 
+values and related to the linguistic variables. This 
+process is  called  fuzzification. Linguistic  values 
+are  words  (linguistic  terms)  with  associated 
+degrees of membership, thus we need to specify 
+the appropriate membership functions. 
+
+Aggregation  is  a  process  of  computing  the 
+value of the rule’s premise. Each condition in the 
+IF part of the rule  is  assigned a degree of truth 
+based  on  the  degree  of  membership  of  the 
+corresponding  linguistic  value.  The  degree  of 
+truth  of  the  IF  part  is  computed  as  either  the 
+minimum  WIN) or the product  (PROD)  of the 
+degrees of truth of the conditions. This degree of 
+support for the rule is assigned  to the  degree of 
+truth of the THEN part. 
+
+The  process  of  computing the  values  of the 
+d e ’ s   conclusion  is  called  composition.  The 
+degree  of  truth  of  each  linguistic  term  of  the 
+output  linguistic  variable  is  calculated  using 
+either the maximum  (MAX) or the  sum (SUM) 
+of the degrees of truth of the rules with the same 
+linguistic terms in the THEN part. 
+
+Defuzzification  of  linguistic  values  of  the 
+output  linguistic  variable  is the  last step  in this 
+process.  One of the common techniques  used is 
+Centre of Maximum  ( C o w  method,  where  h e  
+crisp value is computed as the best compromise 
+for  the  most  typical  values  of  each  linguistic 
+value and respective degrees of membership. 
+
+4. InterMediActor and student model 
+
+When  introducing  the  user  model  in  the 
+InterMediActor platform, our main objective was 
+to  provide  the  personalization  of  navigation 
+through the course content. This was achieved by 
+constructing  the  personal  navigation  graph  for 
+each student. 
+
+The graph is displayed with  competences as 
+nodes  in  different  colours:  grey  for  already 
+leamed  competences,  red  indicates  forbidden 
+
+light  green, 
+
+indicating  more  or 
+
+competences (at the moment), and green  implies 
+recommended  competences (in range from dark 
+to 
+less 
+recommended  competence).  The  arcs  in  the 
+navigation  graph  show  all  possible  paths  this 
+student  can  take  from  the  currently  studied 
+competence to all (more/less) recommended ones 
+(green nodes). 
+
+The navigation graph is based on the graph of 
+dependences, which  is constructed as a result  of 
+the analysis of leaming objectives. In the process 
+of its construction, we rely on the student model, 
+the  relevant  data  for  each 
+which  collects 
+individual  learner: the marks  (both, passed and 
+failed)  obtained  in  assessment  tests  for  each 
+competence.  Therefore,  the  proposed  student 
+model  consists  of  a  set  of  pairs  (competence, 
+mark)  and  can  be  regarded  as  an  extended 
+overlay over the set of competences. 
+
+There is no assessment of competences prior 
+to  leaming  with  the  system.  Hence, the  student 
+model  initializes  with  no  marks  for  all  the 
+competences (either atomic or aggregated). 
+
+5. Fuzzy student model 
+
+for 
+
+their 
+
+levels 
+
+regarding 
+
+to  assign  categories 
+
+In navigation  graph construction,  we employ 
+to 
+the  student  model 
+competences 
+of 
+recommendation. The process  of  inferring  from 
+assessment  marks  involves  some  imprecision; 
+thus  the  fuzzy  set  theory  [9]  is  used  as  a 
+mathematical 
+this 
+uncertainty. 
+
+expressing 
+
+For  each  competence  we  calculate  a 
+numerical  level of recommendation and assign a 
+corresponding category the  competence belongs 
+to.  The  category  determines  the  colour  of  the 
+node in the navigation graph. 
+
+theory 
+
+When  the  student  takes  the  finakassessment 
+test  for  one competence,  also the  categories of 
+related competences may change. Therefore, new 
+categories  are  calculated 
+tested 
+competence and all competences that depend on 
+it (all  competences in the graph of dependencies 
+which  can  be  directly  accessed  from  the  given 
+competence), 
+
+the 
+
+for 
+
+5.1.  Level of recommendation 
+
+Each competence (with regard to a particular 
+student)  is  assigned  one of  the  following  five 
+recommended, 
+categories: 
+recommended, less recommended, or forbidden. 
+These  categories  match  the  linguistic  (fuzzy) 
+
+learned,  more 
+
+30( 
+
+terms  of 
+recommendation. 
+
+the 
+
+linguistic  variable 
+
+/eve/  of 
+
+The calculated  level  of  recommendation for 
+the competence depends on the level of difficulty 
+of the competence, the mark the student obtained 
+in  the  final-assessment test  for this competence 
+(if any), and on  how well the  student howsihas 
+learned the  prerequisites of this  competence (if 
+there are any). 
+
+5.2.  Level of difficulty 
+
+dfficu/iy 
+
+When  the  student starts with the course, the 
+/eve/  of 
+is  calculated  for  each 
+competence  of  the  course.  It  depends  on  the 
+initial level, specified by  the course provider, and 
+the  marks that  other students  have  obtained for 
+this  competence.  The  calculated  levels  do  not 
+change during the session. 
+
+The  linguistic  variable  /eve1 of  diflculiy  is 
+described by the triple  of membership function 
+values  ( pen,y ,pnOrm, pda 1  and  can  take  three 
+linguistic values: easy, normal, and d@cult. 
+
+initial 
+
+level  of  difficulty 
+
+/  for  a 
+competence  c  ranges  from  1  to  IO,  where  1 
+means  very  easy  and  10  very  difficult 
+competence.  This  value  is  fuvified using  the 
+membership functions in Fig.  3 to determine the 
+values of the triple. 
+
+The 
+
+Figure 3. Membership functionsfor linguistic 
+
+variable level of difficulty 
+
+They  are  calculated 
+equations: 
+
+from 
+
+the 
+
+following 
+
+competence is considered to be easy. In the case 
+of  low  marks, the  competence is difficult.  For 
+each mark the following is applied 
+
+for mark 9 or  10 decrease the difficulty; 
+apply equations (3), 
+for  mark  7  or  8  reinforce the  medium 
+difficulty; apply equations (4), 
+for  mark  6  or  negative  increase  the 
+difficulty; apply equations (5). 
+
+- 
+
+- 
+- 
+
+Decreasing the difficulty: 
+
+= P e o s , ( C ) + K o n n ( C ) ' r  
+
+flu&) 
+Pno,m(cj= P",,,(C)  - P " " " m ( c ) ' r + & q r ( c ) ' r  
+fldr(c)=  ~ d r ( c ) - & g ( c ) . r  
+Reinforcing the medium difficulty: 
+
+= P & -  
+
+P,"&)'r 
+
+P&) 
+P",,  (d = P",,,,  (4 +penV (cl  r + p d r  (c)  r 
+P , ( c ) = p d r ( c ) - P d r ( c ) ' I  
+
+Increasing the difficulty: 
+
+P,&= 
+P < " & - u e a & ' r  
+K,,  (4 = P"<,rm (4 - P"",&) 
+P&) 
+
+= P&)  +&,A4 - r 
+
+'  +Perry (4 ' r 
+
+(3) 
+
+(4) 
+
+(9 
+
+The constant r in the equations controls the rate 
+of changes. The proposed value for r is 
+
+(6) 
+r=min[+,&], 
+where n is the total number of all marks @ositive 
+and negative) received for the competence c. 
+
+to 
+
+in  ML-Modeler 
+
+To  enforce  changes 
+
+the  values  of 
+membership functions we  use  similar  approach 
+as  employed 
+[3],  where 
+probability masses for seven values (range from 
+definitely to  definitely not) are assigned to each 
+concept.  These  concepts  axe  then  upgraded  or 
+downgraded using  fixed updating rules  that shift 
+the  mass  of  the  probability  toward  the  more 
+probable 
+probable 
+(downgrading) ends of the distribution. 
+
+(upgrading) 
+
+less 
+
+or 
+
+If the initial level is not specified for any reason, 
+the values (0,1,0)  are used as default. 
+
+Then the values of membership functions are 
+altered regarding the marks the (other)  students 
+obtained  at  the  final-assessment  test  for  this 
+competence.  If 
+the 
+
+the  marks  are  high, 
+
+5.3.  Marks 
+
+When  students take  the  finaLassessment test 
+for a competence,  they  get  a mark for that test, 
+which is a crisp value between  1 and 10 (value 0 
+signifies no mark). The linguistic variable marks 
+of the  final-assessment test for the competence 
+can take the following values:  negative,positive, 
+and no mark. The variable is fully described by a 
+triple  ( pn,,p,,, , p p n , ) .  The  obtained  mark  is 
+
+301 
+
+transformed into the  linguistic  values  using the 
+membership hctions in Fig. 4. 
+
+Figure 4. Membership functionsfor linguistic 
+
+variable marks 
+
+For  a  given  mark  m, 
+
+the  values  of 
+membership  functions  can  be  calculated using 
+equations (7). 
+
+Ym 
+
+pn,,(m)=max[l -m,Ol 
+p ne8 (m)=max[min[m,1,6-m],0] 
+p,, 
+
+(m) = min[max[ m -5,0], 11 
+
+5.4.  Knowing the prerequisites 
+
+that  has 
+
+For  each  competence 
+
+some 
+prerequisites (in the graph of dependencies), the 
+level ofknowing these prerequisites is calculated 
+and  the  level  they  are  known  (learned)  is 
+described using  five linguistic terms:  not, little, 
+enough, well, and  very  well. The estimation  of 
+knowing  the  prerequisite  competences  is  based 
+on the marks  the student  obtained  when  taking 
+finahssessment tests. If a competence does not 
+have  any prerequisites,  it  is treated  as if  all  its 
+prerequisites are very well known. 
+Let  the  prerequisite  competences  of  the 
+competence  c  be  c,,  c2,  ...  cp,  and  their 
+corresponding marks  M,, m2, .._ mp, respectively. 
+The competence  c thus has  p  prerequisites. The 
+minimum mark  m,,,i, and  average  mark  ma,  of 
+the prerequisites are calculated as follows: 
+
+(9) 
+
+, pI,, , wen, P ~ ~ , ,  
+
+The level  of knowing  the  prerequisites  of  a 
+is  described  by  a  quintuple 
+competence  c 
+, P~~~ 1. If the  competence has 
+( P ~ ,  
+no prerequisites (p = 0), the quintuple has the value 
+(O,O,O,O,l). If one of the  prerequisite competences 
+has a negative mark or no mark at all (mmin < 6), 
+the value is (l,O,O,O,O). Otherwise, the values of 
+membership  hctions  are  calculated  from  the 
+
+(7) 
+
+6 
+
+7 
+
+8 
+
+9 
+
+,o  average 
+
+mark 
+
+Figure 5. Membership functionsfor linguistic 
+
+variable knowing the prerequisites 
+
+5.5. 
+
+IF-THEN  rules 
+
+We  use 
+
+rules 
+
+in  natural 
+
+language  for 
+describing  the  relations  between  the  level  of 
+dificulty  of the competence,  the  marks obtained 
+in  the  finakassessment test  for the  competence, 
+and the estimated  knowing  the prerequisites of 
+this  competence.  This  kind  of  rules  is  easier 
+comprehended and therefore easier to construct. 
+We  operate  with 
+linguistic 
+variables to assign each competence its  level of 
+recommendation  (with  values  learned,  more 
+recommended, recommended, less recommended, 
+andforbidden). We  created  a  set of  17 fuzzy 
+rules.  Each  fuzzy  rule  is  an  IF-THEN  rule  as 
+the  following  rules  are  some 
+defined  in  (1); 
+examples: 
+
+the  described 
+
+IF  the  student  has  a  positive  mark  for  the  final- 
+assessment  test  for  the  competence,  THEN  the 
+competence  is learned. 
+
+IF  the  student  has  a  negative  mark  for  the  final- 
+assessment 
+the 
+competence is  easy, THEN the  competence  is  more 
+recommended. 
+
+the  competence  AND 
+
+test 
+
+for 
+
+IF the  student  has  no  mark  for  the  final-assessment 
+test  for the  mmpetence  AND the  student  knows  we// 
+all  the  prerequisites  of  the  competence  AND  the 
+competence  is  easy, THEN  the  competence  is  more 
+recommended. 
+
+IF  the  student has  no  mark  for  the  final-assessment 
+test for the competence AND the student knows little 
+all  the  prerequisites  of  the  competence  AND  the 
+competence is d@cult,  THEN the competence is less 
+recommended. 
+
+When  combining rules, we use product (PROD) 
+for aggregation of the degrees of truth and sum 
+(SUM) for their composition. 
+
+5.6.  Defuzzification 
+
+In  the  end,  the  linguistic  values  of  the 
+linguistic variable  level  of recommendation are 
+defuzzified into crisp values. 
+
+We use method Centre of Maximum (CoM), 
+which  computes the  crisp  value  from  the most 
+respective  degrees  of 
+typical  values  and 
+membership.  The  most  typical  value  of  each 
+linguistic term is the maximum of the respective 
+membership function.  For  the  variable  level of 
+recommendafion the most typical  values for the 
+linguistic  teims  learned,  more  recommended, 
+recommended, less recommended, ahd forbidden 
+are 4,  3, 2,  1, and 0, respectively (see  Fig.  6). 
+
+/1 
+forddden 
+
+less 
+
+recom 
+
+more 
+
+leamed 
+
+Figure 6. Membership functions for linguistic 
+
+variable level  of recommendation 
+
+The  crisp  value  L  for  the  competence  c  is 
+computed  as the best  compromise for the  given 
+typical  values  and 
+respective  degrees  of 
+membership  using  weighted  mean.  The 
+respective  degrees  are  used  as  the  respective 
+weights: 
+
+L=P,a&l  O+P,,.,l4 
+Piaa (Cl  +Pi.., 
+
+I+P,*SC)  2+PralCI 
+(Cl  +#,Ad +Pa  (Cl +aiu lC) 
+
+3+P,<.,leI  4 
+
+(11) 
+
+The  calculated  value  L  can  he  used  for 
+annotating  the  nodes  (competences)  or  for 
+assigning weights  to  the  arcs  in  the  navigation 
+graph.  This  way,  the  student  receives  more 
+detailed information on suggested competences. 
+
+6. Conclusion 
+
+We have described a way  of  introducing the 
+navigation  support  in  the  e-learning  platform 
+InterMediActor.  When 
+the 
+
+constructing 
+
+navigation  graph,  we  make  a  prediction  on 
+suitability of the  competences, based mainly  on 
+the  marks  of  the  finakassessment  tests.  We 
+proposed  a  fuzzy  student  mode!,  which  was 
+developed and tested on simulated user data. The 
+next  step  is  to  integrate it  into the  e-leaning 
+platform and validate it on real student data. 
+
+7. References 
+
+[l]  Brusilovsky P.  Adaptive hypermedia: From 
+intelligent  tutoring  systems  to  Webbased 
+education.  Intelligent  Tutoring  Systems. 
+Lecture Notes  in  Computer  Science,  Vol. 
+1839;  Proceedings  of  5th  International 
+Conference on Intelligent Tutoring Systems, 
+ITS  2000;  Jun  2000;  Montreal,  Canada. 
+Berlin: Springer Verlag; 2000. 
+
+[2]  G a p e   RM.  Principles  of  Instructional 
+Design.  Third  Edition.  Holt,  Rinehart  and 
+Winston: New York; 1988. 
+
+[3]  Giirer  DW,  deskdins  M,  Schlager  M. 
+Representing  a  Student’s  Leaming  States 
+and  Transitions. AAAI  Spring  Symposium 
+on  Representing  Mental  States 
+and 
+Mechanisms.  Stanford,  CA,  USA.  AAAI 
+technical report, SRI International; 1995. 
+
+[4]  Hams  JW,  Stocker  H.  Handbook  of 
+Mathematics  and  Computational  Science. 
+Springer-Verlag: New York; 1998. 
+
+[5]  Klir  GJ,  Yuan  B.  Fuzzy  Sets  and  Fuzzy 
+Logic:  Theory  and  Applications.  Prentice 
+Hall PTR 1995. 
+
+[6]  Pedraza-Jimenez  R,  Valverde-Albacete  FJ, 
+Cid-Sueiro  J,  Molina-Bulla  H,  Navia- 
+Vazquez A.  Hierarchy-Based Methodology 
+for  Producing  Educational  Contents  with 
+Maximal  Reutilization.  In:  Proceedings  of 
+the  Learning’02  Conference;  Oct  2002; 
+Madrid, Spain; 2002. 
+
+[7]  PRIS Project: Fuzzy Expert  System Model. 
+
+Soft Computing Guidebook. 
+hap://www.comp.nus.edu.sg/-pris/ 
+Fuzzy Logic/ModelDetailed 1 .html [29/2/04] 
+[8]  Valverde-Albacete FJ,  Cid-Sueiro J, Diaz- 
+Perez  P,  Pedraza-Jimenez R,  Molina-Bulla 
+H,  Navia-Vazquez  A.  InterMediActor:  an 
+Environment 
+Instructional  Content 
+Design  Based  on  Competences. 
+In: 
+Proceedings of the 2003 ACM  Symposium 
+on Applied Computing SAC’03; Mar 2003; 
+Melbourne, USA; 2003. 
+
+[9]  Zadeh  LA.  Fuzzy  Sets.  Information  and 
+
+for 
+
+Control 1965; 8. 
+
+

@@ -1,42 +1,45 @@
 #coding:utf-8
 """
 extract the references from paper(pdf).
+Ref:
+PdfMiner:http://denis.papathanasiou.org/posts/2010.08.04.post.html
 """
+
+
 _author_ = 'Liao Pan'
 
-def fun():
-    """
-    just for fun;
-    -A
-    *B*
-    *1
-    *2
-        *2.1
-        *2.2
-    |zhe xie hang.
-    1.Hello
-    2.Ok
+import os
+import pdb
 
-    :param etype: exception type
-    :return: void
-=====  =====  =======
-A      B      A and B
-=====  =====  =======
-False  False  False
-True   False  False
-False  True   False
-True   True   True
-=====  =====  =======
+PDF_DIR = r"/home/reallocing/Git/MyCodeSpace/EnhancePython/PaperCites/A tutorial on machine learning in educational science.pdf"
+PDF_DIR1 = r"/home/reallocing/Git/MyCodeSpace/EnhancePython/PaperCites/1602.07029v1.pdf"
+PDF_DIR2 = r"/home/reallocing/Git/MyCodeSpace/EnhancePython/PaperCites/Fuzzy Student Model in InterMediActor Platform.pdf"
+
+def parser_pdf(pdf_dir):
+    """
+
+    :param pdf_dir:
+    :return: txt
+    """"pdf2txt.py -o out.txt"
+    #pdb.set_trace()
+    pdfname = os.path.split(pdf_dir)[1].replace(" ","\ ")
+
+    #pdfname = " A\ tutorial\ on\ machine\ learning\ in\ educational\ science.pdf"
+    cmd = "pdf2txt.py -o out.txt"+" "+pdfname
+    os.system(cmd)
+
+
+
+
+
+
+
+def extract_reference_paper_from_txt():
+    """
+
+    :return: List [reference paper]
     """
     pass
 
-if __name__ == '__main__':
-    """
-    在main()函数前加入了一个判断语句，
-    以此来让脚本判断自己是被当做模块调用，还是被直接运行的。
-    当被import作为模块调用的时候，if以下的代码就不会被执行，
-    也就是说main()函数不会被执行。
-    """
-    #: Doc comment for class attribute Foo.bar.
-    #: It can have multiple lines.
-    fun()
+print("hellpo")
+parser_pdf(PDF_DIR2)

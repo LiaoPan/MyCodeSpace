@@ -1,0 +1,20 @@
+package exJava;
+
+public class demo_interface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+interface musicPlay{
+	void play();
+}
+
+interface cup{
+	void addwater();
+	void drinkwater();
+}
