@@ -43,8 +43,8 @@
 		<item value="820" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="762" key="DIALOG_HEIGHT"/>
-		<item value="28" key="DIALOG_X_ORIGIN"/>
-		<item value="216" key="DIALOG_Y_ORIGIN"/>
+		<item value="67" key="DIALOG_X_ORIGIN"/>
+		<item value="46" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.equinox.internal.p2.ui.dialogs.UpdateWizard.SelectableIUsPage">
 		<item value="200" key="DetailsSashWeight"/>
