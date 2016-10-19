@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AandB/AandB.iml" filepath="$PROJECT_DIR$/AandB/AandB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CharacterElimin/CharacterElimin.iml" filepath="$PROJECT_DIR$/CharacterElimin/CharacterElimin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CountBeerNum/CountBeerNum.iml" filepath="$PROJECT_DIR$/CountBeerNum/CountBeerNum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CountChar/CountChar.iml" filepath="$PROJECT_DIR$/CountChar/CountChar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HeadFirstJava.iml" filepath="$PROJECT_DIR$/HeadFirstJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhraseCmatic/PhraseCmatic.iml" filepath="$PROJECT_DIR$/PhraseCmatic/PhraseCmatic.iml" />
+    </modules>
+  </component>
+</project>
